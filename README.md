@@ -1,7 +1,7 @@
 VoxelTerrain
 ============
 
-Simple voxelized terrain engine. Creates voxel terrain based on any heightmap you supply available for freelook and rendering tests using different methods. You can select the way your terrain is loaded into memory and how is it rendered. You can choose from set of additional performance optimizations and measure time of all the operations.
+Simple OpenGL voxelized terrain engine. Creates voxel terrain based on any heightmap you supply available for freelook and rendering tests using different methods. You can select the way your terrain is loaded into memory and how is it rendered. You can choose from set of additional performance optimizations and measure time of all the operations.
 
 Currently Working
 ============
