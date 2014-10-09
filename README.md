@@ -32,9 +32,9 @@ Immediate needs
   - Needs fixing for accuarcy. For some reason sometimes chunks disappear when they should be visible. Visibility check is based on chunk centers generated as early as map loading. Uses spherical boundary for frustum and euclidean distance for proximity. Both have visible issues though not with the check itself, probably it's an issue with calculating chunk centers.
   - For the time beeing both cullings cannot be used together, but best visual and performance effects could probably be achieved when mixed. For instance, proximity could be set just a chunk away from far vision boundary allowing to load chunks that are not yet visible.
 2. Memory release
-- Maps as big as 512x512 require a lot of memory to load. Program needs a mechanism to clean unused memory objects, such as block table in each chunk containing active elements provided by heightmap loading algorithm. Mesh geometry could also be released as soon as it's loaded into VBO objects. Removing both memory loads would leave us with only VBO memory usage so VRAM + some system RAM for large maps. 
+  - Maps as big as 512x512 require a lot of memory to load. Program needs a mechanism to clean unused memory objects, such as block table in each chunk containing active elements provided by heightmap loading algorithm. Mesh geometry could also be released as soon as it's loaded into VBO objects. Removing both memory loads would leave us with only VBO memory usage so VRAM + some system RAM for large maps. 
 3. Threading
-- Program needs a thread split for producing chunks on the run instead of loading whole map beforehand.
+  - Program needs a thread split for producing chunks on the run instead of loading whole map beforehand.
 4. Interface changes
   - Needs mesageboxes for several cases that cannot work together i.e. indexed triangles (or implement proper mesh creating algorithm for the case).
   
